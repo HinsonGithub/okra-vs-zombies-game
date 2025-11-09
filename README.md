@@ -1,3 +1,5 @@
+Info: This file may contain info generated/ edited by AI
+
 # 🌻 植物大戰殭屍網頁版
 
 一個使用純 JavaScript、HTML 和 CSS 開發的植物大戰殭屍風格塔防遊戲。
