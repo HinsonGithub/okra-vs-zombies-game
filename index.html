@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>植物大戰殭屍 - 網頁版</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game-container">
+        <header>
+            <h1>🌻 植物大戰殭屍 🧟</h1>
+        </header>
+        <div id="game-status">
+            <div class="status-item">
+                <span class="sun-icon">☀️</span>
+                <span id="sun-count">50</span>
+            </div>
+            <div class="status-item">
+                <span>波次: </span>
+                <span id="wave-count">0/5</span>
+            </div>
+            <div class="status-item">
+                <button id="pause-btn">暫停</button>
+            </div>
+        </div>
+        <div id="plant-cards">
+            <div class="plant-card" data-plant="sunflower" data-cost="50">
+                <div class="plant-icon sunflower-icon">🌻</div>
+                <div class="plant-name">向日葵</div>
+                <div class="plant-cost">
+                    <span class="sun-icon">☀️</span>50
+                </div>
+            </div>
+            <div class="plant-card" data-plant="peashooter" data-cost="100">
+                <div class="plant-icon peashooter-icon">🌱</div>
+                <div class="plant-name">豌豆射手</div>
+                <div class="plant-cost">
+                    <span class="sun-icon">☀️</span>100
+                </div>
+            </div>
+            <div class="plant-card" data-plant="wallnut" data-cost="50">
+                <div class="plant-icon wallnut-icon">🛡️</div>
+                <div class="plant-name">堅果牆</div>
+                <div class="plant-cost">
+                    <span class="sun-icon">☀️</span>50
+                </div>
+            </div>
+            <div class="plant-card" data-plant="cherrybomb" data-cost="150">
+                <div class="plant-icon cherrybomb-icon">💣</div>
+                <div class="plant-name">櫻桃炸彈</div>
+                <div class="plant-cost">
+                    <span class="sun-icon">☀️</span>150
+                </div>
+            </div>
+        </div>
+        <canvas id="game-canvas"></canvas>
+        <div id="game-message" class="hidden">
+            <div class="message-content">
+                <h2 id="message-title">遊戲開始</h2>
+                <p id="message-text">準備好保衛你的草坪!</p>
+                <button id="message-btn">開始遊戲</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/projectiles.js"></script>
+<script src="js/plants.js"></script>
+<script src="js/zombies.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>
